@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鸿达金融管理后台</title>
+    <link rel="stylesheet/less" href="./assets/less/base.less">
+    <link rel="stylesheet/less" href="./assets/less/index.less">
+    <link rel="stylesheet" href="./assets/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/lib/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <!--公共顶部导航-->
+    <header class="header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">xxx</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">鸿达金融管理后台</a></li>
+                        <li><a href="#">产品与服务</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">鸿达金融公司</a></li>
+                        <li><a href="#">董总，欢迎您！</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-user"></span>个人中心<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    <!--公共内容部分-->
+    <section class="section">
+        <!--侧边栏-->
+        <aside class="aside-l">
+            <!--折叠面板开关-->
+            <div class="fa fa-reorder folder"></div>
+            <!--一级导航-->
+            <ul class="nav nav-tabs nav-stacked menu-1">
+                <li role="presentation" class="menu-1-top"><a href="javascript:;" class="menu-1-top-1">主页</a></li>
+                <li role="presentation" class="menu-1-bottom">
+                    <a href="#"><span class="fa fa-sort-desc icon-1"></span>业务参数</a>
+                    <ul class="nav nav-tabs nav-stacked menu-2">
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>基准保证金</a></li>
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>汇率</a></li>
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>行情涨跌</a></li>
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>支付账号</a></li>
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>合约信息</a></li>
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>主力合约</a></li>
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>机构通知</a></li>
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>开户设置</a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="menu-1-bottom">
+                    <a href="#"><span class="fa fa-sort-desc icon-1"></span>模板</a>
+             <!--二级导航-->
+                    <ul class="nav nav-tabs nav-stacked menu-2">
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>保证金模板</a></li>
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>子账户手续费模板</a></li>
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>风控模板</a></li>
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>代理手续费模板</a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="menu-1-bottom">
+                    <a href="#"><span class="fa fa-sort-desc icon-1"></span>总账户</a>
+                    <!--<ul class="nav nav-tabs nav-stacked menu-2">-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>基准保证金</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>汇率</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>行情涨跌</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>支付账号</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>合约信息</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>主力合约</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>机构通知</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>开户设置</a></li>-->
+                    <!--</ul>-->
+                </li>
+                <li role="presentation" class="menu-1-bottom">
+                    <a href="#"><span class="fa fa-sort-desc icon-1"></span>子账户</a>
+                    <!--<ul class="nav nav-tabs nav-stacked menu-2">-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>基准保证金</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>汇率</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>行情涨跌</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>支付账号</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>合约信息</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>主力合约</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>机构通知</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>开户设置</a></li>-->
+                    <!--</ul>-->
+                </li>
+                <li role="presentation" class="menu-1-bottom">
+                    <a href="#"><span class="fa fa-sort-desc icon-1"></span>风控员</a>
+                    <!--<ul class="nav nav-tabs nav-stacked menu-2">-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>基准保证金</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>汇率</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>行情涨跌</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>支付账号</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>合约信息</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>主力合约</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>机构通知</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>开户设置</a></li>-->
+                    <!--</ul>-->
+                </li>
+                <li role="presentation" class="menu-1-bottom">
+                    <a href="#"><span class="fa fa-sort-desc icon-1"></span>代理人</a>
+                    <!--<ul class="nav nav-tabs nav-stacked menu-2">-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>基准保证金</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>汇率</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>行情涨跌</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>支付账号</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>合约信息</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>主力合约</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>机构通知</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>开户设置</a></li>-->
+                    <!--</ul>-->
+                </li>
+                <li role="presentation" class="menu-1-bottom">
+                    <a href="#"><span class="fa fa-sort-desc icon-1"></span>管理员</a>
+                    <!--<ul class="nav nav-tabs nav-stacked menu-2">-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>基准保证金</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>汇率</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>行情涨跌</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>支付账号</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>合约信息</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>主力合约</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>机构通知</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>开户设置</a></li>-->
+                    <!--</ul>-->
+                </li>
+                <li role="presentation" class="menu-1-bottom">
+                    <a href="#"><span class="fa fa-sort-desc icon-1"></span>查询</a>
+                    <ul class="nav nav-tabs nav-stacked menu-2">
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>当日查询</a></li>
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>历史查询</a></li>
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>佣金查询</a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="menu-1-bottom">
+                    <a href="#"><span class="fa fa-sort-desc icon-1"></span>财务审核</a>
+                    <ul class="nav nav-tabs nav-stacked menu-2">
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>子账户提现</a></li>
+                        <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>代理提现</a></li>
+                    </ul>
+                </li>
+                <li role="presentation" class="menu-1-bottom">
+                    <a href="#"><span class="fa fa-sort-desc icon-1"></span>跟单</a>
+                    <!--<ul class="nav nav-tabs nav-stacked menu-2">-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>基准保证金</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>汇率</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>行情涨跌</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>支付账号</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>合约信息</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>主力合约</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>机构通知</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>开户设置</a></li>-->
+                    <!--</ul>-->
+                </li>
+            </ul>
+        </aside>
+        <article class="main">
+            <aside class="aside-r">
+                <!--折叠面板开关-->
+                <div class="fa fa-reorder folder"></div>
+                <!--一级导航-->
+                <ul class="nav nav-tabs nav-stacked menu-1">
+                    <li role="presentation" class="menu-1-top"><a href="javascript:;" class="menu-1-top-1">主页</a></li>
+                    <li role="presentation" class="menu-1-bottom">
+                        <a href="#"><span class="fa fa-sort-desc icon-1"></span>业务参数</a>
+                        <ul class="nav nav-tabs nav-stacked menu-2">
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>基准保证金</a></li>
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>汇率</a></li>
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>行情涨跌</a></li>
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>支付账号</a></li>
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>合约信息</a></li>
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>主力合约</a></li>
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>机构通知</a></li>
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>开户设置</a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="menu-1-bottom">
+                        <a href="#"><span class="fa fa-sort-desc icon-1"></span>模板</a>
+                        <!--二级导航-->
+                        <ul class="nav nav-tabs nav-stacked menu-2">
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>保证金模板</a></li>
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>子账户手续费模板</a></li>
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>风控模板</a></li>
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>代理手续费模板</a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="menu-1-bottom">
+                        <a href="#"><span class="fa fa-sort-desc icon-1"></span>总账户</a>
+                        <!--<ul class="nav nav-tabs nav-stacked menu-2">-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>基准保证金</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>汇率</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>行情涨跌</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>支付账号</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>合约信息</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>主力合约</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>机构通知</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>开户设置</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <li role="presentation" class="menu-1-bottom">
+                        <a href="#"><span class="fa fa-sort-desc icon-1"></span>子账户</a>
+                        <!--<ul class="nav nav-tabs nav-stacked menu-2">-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>基准保证金</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>汇率</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>行情涨跌</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>支付账号</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>合约信息</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>主力合约</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>机构通知</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>开户设置</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <li role="presentation" class="menu-1-bottom">
+                        <a href="#"><span class="fa fa-sort-desc icon-1"></span>风控员</a>
+                        <!--<ul class="nav nav-tabs nav-stacked menu-2">-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>基准保证金</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>汇率</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>行情涨跌</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>支付账号</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>合约信息</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>主力合约</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>机构通知</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>开户设置</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <li role="presentation" class="menu-1-bottom">
+                        <a href="#"><span class="fa fa-sort-desc icon-1"></span>代理人</a>
+                        <!--<ul class="nav nav-tabs nav-stacked menu-2">-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>基准保证金</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>汇率</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>行情涨跌</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>支付账号</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>合约信息</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>主力合约</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>机构通知</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>开户设置</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <li role="presentation" class="menu-1-bottom">
+                        <a href="#"><span class="fa fa-sort-desc icon-1"></span>管理员</a>
+                        <!--<ul class="nav nav-tabs nav-stacked menu-2">-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>基准保证金</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>汇率</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>行情涨跌</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>支付账号</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>合约信息</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>主力合约</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>机构通知</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>开户设置</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <li role="presentation" class="menu-1-bottom">
+                        <a href="#"><span class="fa fa-sort-desc icon-1"></span>查询</a>
+                        <ul class="nav nav-tabs nav-stacked menu-2">
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>当日查询</a></li>
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>历史查询</a></li>
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>佣金查询</a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="menu-1-bottom">
+                        <a href="#"><span class="fa fa-sort-desc icon-1"></span>财务审核</a>
+                        <ul class="nav nav-tabs nav-stacked menu-2">
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>子账户提现</a></li>
+                            <li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>代理提现</a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="menu-1-bottom">
+                        <a href="#"><span class="fa fa-sort-desc icon-1"></span>跟单</a>
+                        <!--<ul class="nav nav-tabs nav-stacked menu-2">-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>基准保证金</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>汇率</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>行情涨跌</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>支付账号</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>合约信息</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>主力合约</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>机构通知</a></li>-->
+                        <!--<li role="presentation" class="menu-2-l"><a href="javascript:;"><span class="fa fa-plus-square icon-2"></span>开户设置</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                </ul>
+            </aside>
+            <div class="container-r">
+
+                <!--带表格的面板-->
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">
+                        <h3 class="panel-title">基准保证金</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>说明</p>
+                    </div>
+
+                    <!-- Table -->
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>品种代码</th>
+                                <th>品种名称</th>
+                                <th>按手数</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody class="m-tbody">
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AD</td>
+                                <td>澳元</td>
+                                <td>450美元/手</td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <!--Dropdown-->
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="javascript:;">编辑</a></li>
+                                                <!--<li><a href="#">Dropdown link</a></li>-->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </article>
+    </section>
+</body>
+<script src="./assets/lib/jquery.min.js"></script>
+<script src="./assets/lib/less.js/less.min.js"></script>
+<script src="./assets/lib/bootstrap/dist/js/bootstrap.js"></script>
+<script src="./assets/js/index.js"></script>
+</html>

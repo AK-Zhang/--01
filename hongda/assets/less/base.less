@@ -1,0 +1,273 @@
+
+html,body,div,header,footer,section,ul,li,ol,dl,input,a,span,i,s{
+  margin: 0;
+  padding: 0;
+}
+//头部样式
+.header .navbar-default {
+  border: 0px;
+  z-index: 99;
+  border-radius: 0;
+  background-color: #373d41;
+  .container-fluid {
+    padding-right: 0;
+    .dropdown {
+      >.dropdown-toggle {
+        background-color: #373d41;
+        color: #fff;
+        .fa-user {
+          padding-right: 6px;
+        }
+      }
+      .dropdown-menu {
+        background-color: #373d41;
+      }
+    }
+    .navbar-header a, .navbar-collapse a {
+      color: #fff;
+      border-right: 1px solid #2a2f32;
+    }
+    .navbar-header a:hover, .navbar-collapse a:hover {
+      background-color: #2a2f32;
+      color: #fff;
+    }
+  }
+}
+//侧边栏目样式
+.section {
+  padding-top: 50px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  //background-color: #EAEDF1;
+  .aside-l {
+    position: fixed;
+    width: 180px;
+    height: 100%;
+    //overflow: scroll;
+    //overflow-y: hidden;
+    background-color: #333744;
+    z-index: 99;
+    a {
+      color: #fff;
+      font-size: 12px;
+    }
+    //折叠板样式
+    .folder, .refolder {
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+      font-size:16px;
+      width: 100%;
+      height: 30px;
+      background-color: #4A5064;
+    }
+    //一级菜单
+    .menu-1 {
+      border: 0;
+      width: 100%;
+      background-color: #42485B;
+      margin-top: -4px;
+      //一级菜单主页
+      .menu-1-top .menu-1-top-1{
+        padding-left: 44px;
+      }
+      //一级菜单列表样式
+      .menu-1-top,.menu-1-bottom {
+        height: 40px;
+        overflow: hidden;
+        margin-top: 0px;
+        //一级菜单小三角样式
+        .icon-1 {
+          position: relative;
+          bottom: 10px;
+          left: -3px;
+          transform: rotate(-90deg);
+          padding: 10px 20px 10px 0px;
+        }
+        //一级菜单小三角变化样式
+        .icon-3 {
+          position: relative;
+          bottom: 3px;
+          left: 7px;
+          padding: 10px 20px 10px 0px;
+        }
+        a {
+          border: 0;
+          border-radius: 0;
+          margin-right: 0;
+          height: 40px;
+          padding: 0 15px;
+          line-height: 40px;
+          background-color: #42485B;
+        }
+        //一级菜单鼠标点中后样式
+        a.actived {
+          background-color: #00C1DE;
+        }
+        //二级菜单样式
+        .menu-2 {
+          border: 0px;
+          .menu-2-l {
+            background-color: #333744;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            //height: 50px;
+            .icon-2 {
+              padding: 10px 20px 10px 0px;
+              color: #fff;
+            }
+            a {
+              border: 0;
+              border-radius: 0;
+              margin-right: 0;
+              height: 40px;
+              padding: 0 20px;
+              line-height: 40px;
+              background-color: #333744;
+            }
+            a:hover {
+              border: 0;
+              border-radius: 0;
+              background-color: #4A5064;
+            }
+            a.actived {
+              background-color: #00C1DE;
+            }
+          }
+        }
+        //鼠标悬浮样式
+        a:hover {
+          border: 0;
+          border-radius: 0;
+          background-color: #00C1DE;
+        }
+      }
+    }
+  }
+  .main {position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 180px;
+    .aside-r {
+      position: absolute;
+      left: 180px;
+      float: left;
+      width: 180px;
+      height: 100%;
+      background-color: #EAEDF1;
+      a {
+        color: #fff;
+        font-size: 12px;
+      }
+      //折叠板样式
+      .folder, .refolder {
+        //position: absolute;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        font-size:16px;
+        width: 100%;
+        height: 30px;
+        background-color: #D9DEE4;
+      }
+      //一级菜单
+      .menu-1 {
+        border: 0;
+        width: 100%;
+        //background-color: #42485B;
+        margin-top: -4px;
+        //一级菜单主页
+        .menu-1-top .menu-1-top-1{
+          padding-left: 44px;
+        }
+        //一级菜单列表样式
+        .menu-1-top,.menu-1-bottom {
+          height: 40px;
+          overflow: hidden;
+          margin-top: 0px;
+          //一级菜单小三角样式
+          .icon-1 {
+            position: relative;
+            bottom: 10px;
+            left: -3px;
+            transform: rotate(-90deg);
+            padding: 10px 20px 10px 0px;
+          }
+          //一级菜单小三角变化样式
+          .icon-3 {
+            position: relative;
+            bottom: 3px;
+            left: 7px;
+            padding: 10px 20px 10px 0px;
+          }
+          a {
+            color: #333333;
+            border: 0;
+            border-radius: 0;
+            margin-right: 0;
+            height: 40px;
+            padding: 0 15px;
+            line-height: 40px;
+            //background-color: #42485B;
+          }
+          //一级菜单鼠标点中后样式
+          a.actived {
+            background-color: #FFFFFF;
+          }
+          //二级菜单样式
+          .menu-2 {
+            border: 0px;
+            .menu-2-l {
+              //background-color: #333744;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              //height: 50px;
+
+              .icon-2 {
+                padding: 10px 20px 10px 0px;
+                //color: #fff;
+              }
+              a {
+                color: #666666;
+                border: 0;
+                border-radius: 0;
+                margin-right: 0;
+                height: 40px;
+                padding: 0 20px;
+                line-height: 40px;
+                //background-color: #333744;
+              }
+              a:hover {
+                border: 0;
+                border-radius: 0;
+                background-color: #F4F6F8;
+              }
+              a.actived {
+                background-color: #FFFFFF;
+              }
+            }
+          }
+          //鼠标悬浮样式
+          a:hover {
+            border: 0;
+            border-radius: 0;
+            background-color: #F4F6F8;
+          }
+        }
+      }
+    }
+    .container-r {
+      float: left;
+      box-sizing: border-box;
+      width: 100%;
+      padding-left: 180px;
+      height: 100%;
+      overflow: hidden;
+      
+    }
+  }
+}
+
+
